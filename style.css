@@ -43,6 +43,7 @@ body {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    overflow: hidden;
 }
 
 .list li a span .out {
@@ -57,5 +58,22 @@ body {
     -o-transform: translateY(-100%);
 }
 
+.list li a span .in {
+    position: absolute;
+    left: 0;
+    color: #2aa1ff;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+}
 
+.list li a:hover span .in {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
 

@@ -36,3 +36,26 @@ body {
     letter-spacing: 2px;
 }
 
+.list li a span {
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.list li a span .out {
+    display: inline-flex;
+}
+
+.list li a:hover span .out{
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+
+
+
